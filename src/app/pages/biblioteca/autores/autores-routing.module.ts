@@ -1,17 +1,12 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { AutoresFormComponent } from './autores-form/autores-form.component';
-import { AutoresTableComponent } from './autores-table/autores-table.component';
+import { AutoresComponent } from './autores.component';
 
 
 const routes: Routes = [
   {
-    path:'autores-form',
-    component: AutoresFormComponent
-  },
-  {
-    path:'autores-table',
-    component: AutoresTableComponent
+    path:'autores',
+    component: AutoresComponent
   }
 ];
 

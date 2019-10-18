@@ -8,44 +8,28 @@ import { EditorialComponent } from './editorial/editorial.component';
 import { ExistenciaComponent } from './existencia/existencia.component';
 import { LibroComponent } from './libro/libro.component';
 import { TipoComponent } from './tipo/tipo.component';
-import { LibroFormComponent } from './libro/libro-form/libro-form.component';
-import { LibroTableComponent } from './libro/libro-table/libro-table.component';
-import { AreasFormComponent } from './areas/areas-form/areas-form.component';
-import { AreasTableComponent } from './areas/areas-table/areas-table.component';
-import { AutoresFormComponent } from './autores/autores-form/autores-form.component';
-import { AutoresTableComponent } from './autores/autores-table/autores-table.component';
-import { EditorialFormComponent } from './editorial/editorial-form/editorial-form.component';
-import { EditorialTableComponent } from './editorial/editorial-table/editorial-table.component';
-import { ExistenciaTableComponent } from './existencia/existencia-table/existencia-table.component';
-import { ExistenciaFormComponent } from './existencia/existencia-form/existencia-form.component';
-import { TipoFormComponent } from './tipo/tipo-form/tipo-form.component';
-import { TipoTableComponent } from './tipo/tipo-table/tipo-table.component';
+import { BibliotecaComponent } from './biblioteca.component';
+import { AreasModule } from './areas/areas.module';
+import { AutoresModule } from './autores/autores.module';
+import { EditorialModule } from './editorial/editorial.module';
+import { ExistenciaModule } from './existencia/existencia.module';
+import { LibroModule } from './libro/libro.module';
+import { TipoModule } from './tipo/tipo.module';
 
 
 @NgModule({
   declarations: [
-    AreasComponent, 
-    AutoresComponent, 
-    EditorialComponent, 
-    ExistenciaComponent, 
-    LibroComponent,
-    TipoComponent,
-    LibroFormComponent,
-    LibroTableComponent,
-    AreasFormComponent,
-    AreasTableComponent,
-    AutoresFormComponent,
-    AutoresTableComponent,
-    EditorialFormComponent,
-    EditorialTableComponent,
-    ExistenciaFormComponent,
-    ExistenciaTableComponent,
-    TipoFormComponent,
-    TipoTableComponent
+    BibliotecaComponent
   ],
   imports: [
     CommonModule,
     BibliotecaRoutingModule,
+    AreasModule,
+    AutoresModule,
+    EditorialModule,
+    ExistenciaModule,
+    LibroModule,
+    TipoModule
   ]
 })
 export class BibliotecaModule { }
