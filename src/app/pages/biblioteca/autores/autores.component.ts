@@ -8,11 +8,11 @@ import { Component, OnInit } from '@angular/core';
 export class AutoresComponent implements OnInit {
 
 
-  public titulo= "formulario de autores";
-  public nombre= String;
-  public apellido= String;
-  public fecha= String;
-  public nacionalidad= String;
+  public titulo: "formulario de autores";
+  public nombre: String;
+  public apellido: String;
+  public fecha: String;
+  public nacionalidad: String;
 
   
   constructor() { }

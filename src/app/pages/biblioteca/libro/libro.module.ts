@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { LibroRoutingModule } from './libro-routing.module';
 import { LibroFormComponent } from './libro-form/libro-form.component';
@@ -15,7 +16,9 @@ import { LibroComponent } from './libro.component';
   ],
   imports: [
     CommonModule,
-    LibroRoutingModule
+    LibroRoutingModule,
+    FormsModule,
+    ReactiveFormsModule
   ]
 })
 export class LibroModule { }
