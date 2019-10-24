@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EditorialComponent implements OnInit {
 
-  public titulo:"formulario de Editorial";
+  public titulo="formulario de Editorial";
   public nombre: String;
   public direccion: String;
   public telefono: String;

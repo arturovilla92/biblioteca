@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TipoComponent implements OnInit {
 
-  public titulo:"formulario de Editorial";
+  public titulo="formulario de Editorial";
   public tipo: String;
 
   constructor() { }
