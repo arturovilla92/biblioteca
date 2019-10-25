@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
+
 @Component({
   selector: 'app-existencia-form',
   templateUrl: './existencia-form.component.html',
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ExistenciaFormComponent implements OnInit {
 
+
+
   constructor() { }
 
   ngOnInit() {
   }
+
+  
 
 }

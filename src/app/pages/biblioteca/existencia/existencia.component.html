@@ -1,13 +1,30 @@
-<br>
-<br>
-<br>
-<br>
-<div class="row">
-  <div class="col-6">
-    <app-existencia-table></app-existencia-table>
-  </div>
-  <div class="col-6">
-    <app-existencia-form></app-existencia-form>
-  </div>
+<br><br>
+{{titulo}}
+{{codigo}}
+{{nombre}}
+{{fec_nac}}
+<br><br><br>
+<form FormGroup="existenciaForm">
+<div class="form-row">
+    <div class="form-group col-md-6">
+      <label>Codigo</label>
+      <input type="text" class="form-control" FormControlName="codigo" name="codigo" placeholder="codigo">
+    </div>
+</div> 
 
-</div>
+<div class="form-row">
+    <div class="form-group col-md-6">
+        <label>Nombre</label>
+        <input type="text" class="form-control" FormControlName="nombre" name="nombre" placeholder="nombre">
+    </div>
+</div> 
+
+<div class="form-row">
+    <div class="form-group col-md-6">
+        <label>Fecha de nacimiento</label>
+        <input type="text" class="form-control"  FormControlName="fec_nac" name="fec_nac" placeholder="fecha de nacimiento">
+    </div>
+</div> 
+
+  <button type="submit" (click)="Saveform()" class="btn btn-primary">Guardar</button>
+</form>
