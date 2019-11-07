@@ -1,27 +1,22 @@
-<br><br>
+
 {{titulo}}
-<br><br><br>
-<form>
+
+<form FormGroup="areasformForm">
 <div class="form-row">
     <div class="form-group col-md-6">
-      <label for="inputEmail4">Areas</label>
-      <input type="text" class="form-control"  [(ngModel)]="areas" [ngModelOptions]="{standalone:true}" placeholder="areas">
+      <label for="inputEmail4">Codigo</label>
+      <input type="text" class="form-control"  FormControlName="code" placeholder="codigo">
     </div>
 </div> 
 
 <div class="form-row">
     <div class="form-group col-md-6">
-        <label for="inputEmail4">Pasillo</label>
-        <input type="text" class="form-control"  [(ngModel)]="pasillo" [ngModelOptions]="{standalone:true}" placeholder="pasillo">
+        <label for="inputEmail4">Descripcion</label>
+        <input type="text" class="form-control"  FormControlName="description" placeholder="description">
     </div>
 </div> 
 
-<div class="form-row">
-    <div class="form-group col-md-6">
-        <label for="inputEmail4">Estanteria</label>
-        <input type="text" class="form-control"  [(ngModel)]="estanteria" [ngModelOptions]="{standalone:true}" placeholder="estanteria">
-    </div>
-</div> 
+
 
   <button type="submit" (click)="Saveform()" class="btn btn-primary">Guardar</button>
 </form>
