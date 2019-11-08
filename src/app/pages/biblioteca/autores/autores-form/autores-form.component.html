@@ -1,3 +1,4 @@
+{{autoresformForm.value/json}}
 
 {{titulo}}
 
@@ -41,3 +42,16 @@
   
   <button type="submit" (click)="Saveform()" class="btn btn-primary">Guardar</button>
 </form>
+
+<table>
+    <tr>
+      <td>Nombre</td>
+      <td>Apellido</td>
+    </tr>
+    <tr *ngFor="let autor of authors">
+      <td>{{autor.name}}</td>
+      <td>{{autor.lastname}}</td>
+
+    </tr>
+</table>
+  
