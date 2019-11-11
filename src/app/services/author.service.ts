@@ -8,13 +8,13 @@ export class AuthorService {
 
   constructor(protected http:HttpClient) { }
 
-  getAuthors () {
+  getAuthors() {
     return this.http.get('http://trainning.omarenco.com/api/author')
 
   }
 
   postAuthor(data){
-    return this.http.post('http://trainning.omarenco.com/api/author',data);
+    return this.http.post('http://trainning.omarenco.com/api/author', data)
 
   }
 }
