@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
+import { EditorialService } from 'src/app/services/editorial.service';
 
 @Component({
   selector: 'app-editorial-form',
@@ -8,7 +9,10 @@ import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 })
 export class EditorialFormComponent implements OnInit {
 
-  constructor(protected fb: FormBuilder ) { }
+  constructor(protected fb: FormBuilder, protected service:EditorialService) {
+    this.createForm()
+   }
+
 
   public editorialformForm: FormGroup;
   public titulo="formulario de Editorial";
@@ -22,4 +26,9 @@ export class EditorialFormComponent implements OnInit {
       country: ['', Validators.required]
       }) 
     }
+
+    Saveform(){
+      this.service.postEditorial(this.editorialformForm.value).subscribe(data => alert('listo'))
+  }
+
 }

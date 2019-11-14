@@ -1,23 +1,23 @@
 
 {{titulo}}
 
-<form FormGroup="editorialformForm">
+<form [formGroup]="editorialformForm">
   <div class="form-row">
     <div class="form-group col-md-6">
       <label for="inputEmail4">Codigo</label>
-      <input type="text" class="form-control"  FormControlName="code" placeholder="codigo">
+      <input type="text" class="form-control"  formControlName="code" placeholder="codigo">
     </div>
   </div>
   <div class="form-row">
     <div class="form-group col-md-6">
       <label for="inputEmail4">Descripcion</label>
-      <input type="email" FormControlName="description" class="form-control" placeholder="descripcion">
+      <input type="email" formControlName="description" class="form-control" placeholder="descripcion">
     </div>
   </div>
   <div class="form-row">
     <div class="form-group col-md-6">
       <label for="inputEmail4">Pais</label>
-      <input type="email" FormControlName="country"  class="form-control" placeholder="pais">
+      <input type="email" formControlName="country"  class="form-control" placeholder="pais">
     </div>
   </div>
   

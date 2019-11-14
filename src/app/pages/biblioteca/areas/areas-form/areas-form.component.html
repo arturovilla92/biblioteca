@@ -1,18 +1,18 @@
 
 {{titulo}}
 
-<form FormGroup="areasformForm">
+<form [formGroup]="areasformForm">
 <div class="form-row">
     <div class="form-group col-md-6">
       <label for="inputEmail4">Codigo</label>
-      <input type="text" class="form-control"  FormControlName="code" placeholder="codigo">
+      <input type="text" class="form-control"  formControlName="code" placeholder="codigo">
     </div>
 </div> 
 
 <div class="form-row">
     <div class="form-group col-md-6">
         <label for="inputEmail4">Descripcion</label>
-        <input type="text" class="form-control"  FormControlName="description" placeholder="description">
+        <input type="text" class="form-control"  formControlName="description" placeholder="description">
     </div>
 </div> 
 

@@ -7,6 +7,8 @@ import { SharedModule } from './shared/shared.module';
 import { AppRoutingModule } from './app.routing';
 import { HttpClientModule } from '@angular/common/http';
 import { AuthorService } from './services/author.service';
+import { AreasService } from './services/areas.service';
+import { EditorialService } from './services/editorial.service';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { AuthorService } from './services/author.service';
     SharedModule,
     AppRoutingModule
   ],
-  providers: [AuthorService],
+  providers: [AuthorService,
+              AreasService,
+              EditorialService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

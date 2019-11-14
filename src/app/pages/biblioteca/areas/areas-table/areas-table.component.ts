@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { AreasService } from 'src/app/services/areas.service';
+
 
 @Component({
   selector: 'app-areas-table',
@@ -7,9 +9,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AreasTableComponent implements OnInit {
 
-  constructor() { }
-
+  constructor(protected service:AreasService) { }
+  area: any;
   ngOnInit() {
+
+    this.service.getAreas().subscribe(data=>{
+      this.area=data
+    })
+
   }
 
 }

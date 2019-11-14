@@ -1,1 +1,13 @@
-<p>autores-table works!</p>
+<table class="table">
+    <thead>
+    <tr>
+      <th scope="col">Nombre</th>
+      <th scope="col">Apellido</th>
+    </thead>
+    <tbody>
+    <tr *ngFor="let autor of authors">
+        <td>{{autor.name}}</td>
+        <td>{{autor.lastname}}</td>
+    </tr>
+    </tbody>
+  </table>

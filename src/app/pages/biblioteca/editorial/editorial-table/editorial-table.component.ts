@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { EditorialService } from 'src/app/services/editorial.service';
 
 @Component({
   selector: 'app-editorial-table',
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EditorialTableComponent implements OnInit {
 
-  constructor() { }
-
+  constructor(protected service:EditorialService) { }
+  editoriales: any;
   ngOnInit() {
+    this.service.getEditorial().subscribe(data=>{
+      this.editoriales=data
+    })
   }
 
 }

@@ -13,17 +13,13 @@ export class AutoresFormComponent implements OnInit {
     this.createForm()
    }
 
-  authors : any;
+  
   public autoresformForm: FormGroup;
   public titulo="formulario de autores";
   
   ngOnInit() {
-    this.service.getAuthors().subscribe( data => {
-      this.authors=data
-      
-      });
-
   }
+  
  createForm(){
     this.autoresformForm = this.fb.group({
       code: ['', Validators.required],
@@ -38,8 +34,6 @@ export class AutoresFormComponent implements OnInit {
   Saveform(){
     this.service.postAuthor(this.autoresformForm.value).subscribe(data => alert('listo'))
 }
-
-
 
 }
 
